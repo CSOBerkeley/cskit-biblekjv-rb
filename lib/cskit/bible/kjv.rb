@@ -11,5 +11,5 @@ CSKit.register_book({
   :language => "English",
   :resource_path => File.join(CSKitBibleKJV.resource_dir, "bible", "kjv"),
   :parser => CSKit::Parsers::BibleParser,
-  :reader => CSKit::Readers::BibleReader,
+  :reader => CSKit::Readers::BibleReader
 })
