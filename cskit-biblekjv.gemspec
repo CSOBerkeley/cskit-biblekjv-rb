@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = true
 
   s.add_dependency 'json'
-  # s.add_dependency 'cskit', '~> 1.0.0'
+  s.add_dependency 'cskit', '~> 1.0.0'
 
   s.add_development_dependency 'rake'
 
