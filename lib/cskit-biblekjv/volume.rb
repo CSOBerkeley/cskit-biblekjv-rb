@@ -20,6 +20,17 @@ module CSKitBibleKJV
       chapter_cache[resource_file] ||= CSKit::Volumes::Bible::Chapter.from_hash(JSON.parse(File.read(resource_file)))
     end
 
+    def unabbreviate_book_name(orig_book_name)
+      book_name = orig_book_name.strip.chomp(".")  # remove trailing period
+      regex = /^#{book_name}\w*/i
+
+      found_book = books.find do |book|
+        book["name"] =~ regex
+      end
+
+      found_book ? found_book["name"] : orig_book_name
+    end
+
     def books
       @books ||= JSON.parse(File.read(File.join(resource_path, "books.json")))
     end
