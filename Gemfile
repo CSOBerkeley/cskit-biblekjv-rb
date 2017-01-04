@@ -7,4 +7,5 @@ gem 'cskit', path: '~/workspace/cskit-rb'
 group :development do
   gem 'pry'
   gem 'pry-byebug'
+  gem 'rake'
 end
