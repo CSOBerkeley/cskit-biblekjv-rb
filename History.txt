@@ -1,3 +1,7 @@
+== 2.0.1
+
+* Oops, loosen dependency on cskit.
+
 == 2.0.0
 
 * General cleanup.
