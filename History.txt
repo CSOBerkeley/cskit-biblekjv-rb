@@ -1,3 +1,9 @@
+== 2.0.0
+
+* General cleanup.
+* Depend on cskit v1.1.0 and later.
+* Unify namespace as cskit/bible/kjv (breaking change).
+
 == 1.0.0
 
 * Birthday!
